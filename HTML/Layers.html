@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        /* @layer base, special; */
+        body{
+            background-color: black;
+            color: white;
+            container-type: inline-size;
+        }
+        /* @layer base{
+            .para{
+                font-size: 30px;
+                color: red;
+            }
+        }
+        @layer special{
+            .highlight-para{
+                font-size: 45px;
+                color: lightblue;
+            }
+        } */
+         p{
+            font-size: 45px;
+         }
+        /* @media (min-width:800px), (max-width: 400px){
+            p{
+                font-size: 25px;
+                background-color: gray;
+            }
+        } */
+         @container (width > 800px){
+            p{
+                font-size: 25px;
+                background-color: gray;
+            }
+        }
+    </Style>
+</head>
+<body>
+    <p class="para">Hello World!</p>
+</body>
+</html>

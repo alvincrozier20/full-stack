@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            background-color: black;
+            background-image: url('125728-2048x1536-desktop-hd-game-of-thrones-background-photo.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+            overflow-y: hidden;
+        }
+        .container{
+            display: flex;
+            width: max-content;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            font-family: 'Cinzel', serif;
+            font-size: 4rem;
+            text-transform: uppercase;
+            letter-spacing: 8px;
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+        }
+
+        .box {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            left: 0;
+        }
+
+        
+        .box img {
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.9), 0 0 15px rgba(255, 255, 255, 0.15);
+            object-fit: cover;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .box img:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 1), 0 0 25px rgba(255, 255, 255, 0.25);
+        }
+
+        #box1 {
+            position: relative;
+        }
+
+        #box3 img {
+            object-position: top center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">
+            <!-- <h1>Winter is Coming</h1> -->
+        </div>
+
+        <div class="box" id="box2">
+            <img src="E:\Workspace\FullStack\BentoBox\381000.jpg" alt="Batman Begins" width="1000px"
+                height="500px">
+        </div>
+        <div class="box" id="box3">
+            <img src="E:\Workspace\FullStack\BentoBox\sean-bean-iron-throne-sword-game-of-thrones-wallpaper-preview.jpg" alt="Batman Begins" width="1000px" height="500px">
+        </div>
+        <div class="box" id="box4">
+            <img src="E:\Workspace\FullStack\BentoBox\wp3945446-tyrion-lannister-hd-wallpapers.jpg" alt="Batman Begins" width="1000px" height="600px">
+        </div>
+
+    </div>
+</body>
+
+</html>

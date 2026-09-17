@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme{
+    --text-brand: #dedede;
+}
+.heading{
+      @apply w-100 h-100 bg-black m-10 text-brand text-white;
+}
+/* @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *)); */

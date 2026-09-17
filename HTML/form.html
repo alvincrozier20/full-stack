@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registration Form</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+        }
+
+        form {
+            width: 600px;
+            margin: 30px auto;
+            padding: 30px;
+            border: 2px solid black;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        div {
+            padding: 15px;
+            margin: 10px 0;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+
+        button {
+            color: white;
+            background-color: black;
+            border-width: 0px;
+            font-size: 40px;
+            margin: 3%;
+            padding: 10px 30px;
+        }
+
+        button:hover {
+            box-shadow: 3px 3px 5px gray;
+        }
+
+        button:active {
+            box-shadow: 0px 0px 0px;
+            background-color: gray;
+        }
+
+        button:focus {
+            outline: 3px solid red;
+        }
+
+
+        input[type=checkbox] {
+            height: 30px;
+            width: 30px;
+        }
+
+        input:checked {
+            box-shadow: 3px 3px 5px gray;
+            accent-color: red;
+        }
+
+
+
+        a {
+            font-size: 25px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                         'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+                         'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        a:link {
+            color: red;
+        }
+
+        a:visited {
+            color: gray;
+        }
+
+        a:hover {
+            color: darkblue;
+            text-shadow: 0px 3px 3px black;
+        }
+
+
+
+        input:required {
+            border-color: red;
+            border-width: 0 0 3px 0;
+        }
+
+
+        input:optional {
+            border-color: green;
+            border-width: 0 0 3px 0;
+        }
+
+
+
+        input:disabled {
+            border-color: transparent;
+            background-color: gray;
+            color: white;
+            border-width: 0 0 3px 0;
+        }
+
+
+
+        input:read-only {
+            background-color: lightgray;
+            border: 2px solid gray;
+        }
+
+
+
+        input:read-write {
+            background-color: white;
+            border: 2px solid blue;
+        }
+
+
+
+        input:placeholder-shown {
+            background-color: lightyellow;
+            border: 2px solid orange;
+        }
+
+
+
+        input:valid {
+            background-color: lightgreen;
+            border: 2px solid green;
+        }
+
+
+
+        input:invalid {
+            background-color: lightpink;
+            border: 2px solid red;
+        }
+
+
+
+        input:in-range {
+            background-color: lightgreen;
+            border: 2px solid green;
+        }
+
+
+
+        input:out-of-range {
+            background-color: lightcoral;
+            border: 2px solid red;
+        }
+
+
+
+        input {
+            font-size: 30px;
+            padding: 8px;
+            margin: 5px;
+            border-width: 0 0 2px 0;
+            border-style: solid;
+            border-color: black;
+        }
+
+
+
+        div:has(h2) {
+            background-color: black;
+            color: white;
+        }
+
+
+
+        div:not(:has(h2)) {
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <form>
+
+
+        <div>
+            <h2>Registration Form</h2>
+            <p>Please fill in your details</p>
+        </div>
+
+
+        <div>
+            <label>First Name</label>
+
+            <input
+                type="text"
+                placeholder="Enter firstname"
+                required>
+        </div>
+
+
+
+        <div>
+            <label>Middle Name</label>
+
+            <input
+                type="text"
+                placeholder="Enter middlename">
+        </div>
+
+
+
+        <div>
+            <label>Last Name</label>
+
+            <input
+                type="text"
+                placeholder="Enter lastname"
+                required>
+        </div>
+
+
+
+        <div>
+            <label>Email</label>
+
+            <input
+                type="email"
+                placeholder="Enter email"
+                required>
+        </div>
+
+
+
+        <div>
+            <label>Address</label>
+
+            <input
+                type="text"
+                value="Address is disabled"
+                disabled>
+        </div>
+
+
+
+        <div>
+            <label>User ID</label>
+
+            <input
+                type="text"
+                value="USER123"
+                readonly>
+        </div>
+
+
+
+        <div>
+            <label>Username</label>
+
+            <input
+                type="text"
+                value="Enter username">
+        </div>
+
+
+
+        <div>
+            <label>Age</label>
+
+            <input
+                type="number"
+                placeholder="18 - 100"
+                min="18"
+                max="100"
+                required>
+        </div>
+
+
+
+        <div>
+            <label>Gender</label>
+
+            <input type="radio" name="gender" value="male">
+            Male
+
+            <input type="radio" name="gender" value="female">
+            Female
+
+            <input type="radio" name="gender" value="other">
+            Other
+        </div>
+
+
+
+        <div>
+            <label>Hobbies</label>
+
+            <input type="checkbox" name="hobby" value="coding">
+            Coding
+
+            <input type="checkbox" name="hobby" value="gaming">
+            Gaming
+
+            <input type="checkbox" name="hobby" value="music">
+            Music
+        </div>
+
+
+
+        <div>
+            <input type="checkbox" required>
+            I agree to the terms and conditions.
+        </div>
+
+
+
+        <div>
+            <a href="https://www.google.com">
+                Visit Google
+            </a>
+        </div>
+
+
+
+        <div>
+
+            <button type="submit">
+                Submit
+            </button>
+
+            <button type="reset">
+                Reset
+            </button>
+
+        </div>
+
+    </form>
+
+</body>
+</html>

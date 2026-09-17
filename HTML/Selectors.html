@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{/*universal selector */
+            margin: 0px;
+            padding: 15px;
+        }
+        #myid{
+            color: green;
+        }
+        .myclass{
+            color: yellow;
+            text-shadow: 1px 1px 0px black;
+        }
+        h1,li{
+            color: blue;
+            font-size: 20px;
+        }
+        input[type=email]{
+            border-radius: 15px;
+            border-width: 0 0 3px 0;
+            border-color: red;
+        }
+        li[data=null]{
+            background-color: yellow;
+        }
+        mytag{
+            font-size: 40px;
+        }
+        section h2{
+            color: aqua;
+        }
+        section>h2{
+            color: blueviolet;
+        }
+        h2+p{
+            color: yellow;
+            font-size: 35px;
+            text-shadow: 0 0 3px black;
+        }
+        h2~p{
+            color: green;
+            font-size: 40px;
+        }
+        button{
+            color: white;
+            background-color: black;
+            border-width: 0px;
+            font-size: 40px;
+            margin: 3%;
+        }
+        button:hover{
+            box-shadow: 3px 3px 5px gray;
+        }
+        button:active{
+            box-shadow: 0px 0px 0px;
+            background-color: gray;
+        }
+        button:focus{
+            outline: 3px solid red;
+        }
+        input[type=checkbox]{
+            height: 50px;
+            width: 50px;
+        }
+        input:checked{
+            box-shadow: 3px 3px 5px gray;
+            accent-color: red;
+        }
+        a{
+            font-size: 40px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        a:link{
+            color: red;
+        }
+        a:visited{
+            color: gray;
+        }
+        a:hover{
+            color: darkblue;
+            text-shadow: 0px 3px 3px black;
+        }
+          input:required {
+            border-color: red;
+            border-width: 0 0 3px 0;
+        }
+
+        /* Optional input */
+        input:optional {
+            border-color: green;
+            border-width: 0 0 3px 0;
+        }
+
+        /* Disabled input */
+        input:disabled {
+            border-color: transparent;
+            background-color: gray;
+            color: white;
+            border-width: 0 0 3px 0;
+        }
+
+        /* Read-only input */
+        input:read-only {
+            background-color: lightgray;
+            border: 2px solid gray;
+        }
+
+        /* Read-write input */
+        input:read-write {
+            background-color: white;
+            border: 2px solid blue;
+        }
+
+        /* Placeholder is visible */
+        input:placeholder-shown {
+            background-color: lightyellow;
+            border: 2px solid orange;
+        }
+
+        /* Valid input */
+        input:valid {
+            background-color: lightgreen;
+            border: 2px solid green;
+        }
+
+        /* Invalid input */
+        input:invalid {
+            background-color: lightpink;
+            border: 2px solid red;
+        }
+
+        /* Number is within range */
+        input:in-range {
+            background-color: lightgreen;
+            border: 2px solid green;
+        }
+
+        /* Number is outside range */
+        input:out-of-range {
+            background-color: lightcoral;
+            border: 2px solid red;
+        }
+
+        /* Default input style */
+        input {
+            font-size: 40px;
+            border-width: 0 0 2px 0;
+            border-style: solid;
+            border-color: black;
+        }
+        div:has(h2){
+            background-color: black;
+            color: white;
+        }
+        div:not(:has(h2)){
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form>
+
+        <input type="text" placeholder="firstname" required>
+        <br>
+
+        <input type="text" placeholder="middlename">
+        <br>
+
+        <input type="text" placeholder="lastname" required>
+        <br>
+
+        <input type="text" placeholder="address" disabled>
+        <br>
+
+        <input type="text" value="read-only" readonly>
+        <br>
+
+        <input type="text" value="read and write" read-write>
+        <br>
+
+        <input type="number" placeholder="age" min="18" max="100">
+        <br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+    <a href="#" target="_blank">Link</a>
+    <section>
+        <h2>Heading</h2>
+        <p>para 1</p>
+        <p>para 2</p>
+        <div>
+            <h2>Heading 2</h2>
+        </div>
+    </section>
+    <h1>Selectors</h1>
+    <ul>
+        <mytag>abcd</mytag>
+        <li class="myclass">Universal</li>
+        <li id="myid">Id</li>
+        <li class="myclass" id="myid">Class</li>
+        <li>Element</li>
+        <li data="null">Attribute</li>
+        <li>Combinators</li>
+        <li>Pseudo Class</li>
+        <li>Pseudo Element</li>
+    </ul>
+    <button>Click here</button><br>
+    <input type="checkbox" ><br>
+    <input type="email" placeholder="Email"/><br/>
+    <input type="password" placeholder="Password"><br>
+    
+</body>
+</html>

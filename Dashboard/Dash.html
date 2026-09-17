@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+        }
+        .sidebar{
+            flex: 2;
+            height: 100vh;
+            background: #6c6c7a;
+            color: white;
+        }
+        .content{
+            flex: 8;
+        }
+        .navbar{
+            background-color: #6c6c7a;
+            padding: 3%;
+            margin: 05px 5px 5px;
+            border-radius: 5px;
+        }
+        .cards{
+            flex: 1;
+            padding: 2%;
+            border-radius: 5px;
+            box-shadow: 0 0 7px black;
+            margin: 3% 0 3% 0;
+        }
+        table{
+            margin: 1%;
+        }
+        td{
+            margin: 1%;
+        }
+        .cards{
+            display: flex;
+            gap: 3%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">Sidebar</div>
+        <div class="content">
+            <div class="navbar">Navbar</div>
+            <div class="cards">
+                <div class="card">Card 1</div>
+                <div class="card">Card 2</div>
+                <div class="card">Card 3</div>
+            </div>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Row 1, Column 1</td>
+                        <td>Row 1, Column 2</td>
+                        <td>Row 1, Column 3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
