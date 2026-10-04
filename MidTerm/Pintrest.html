@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: red;
+        }
+        nav{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 10px;
+        }
+        #s{
+            padding: 5px;
+            align-items: center;
+            justify-content: center;
+            height: 30px;
+            width: 400px;
+            border-radius: 20px;
+            background-color: rgb(218, 217, 217);
+            border: none;
+            margin: 20px;
+        }
+        .container{
+            display: grid;
+            outline: 2px black;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            grid-template-areas: 
+            "box1 box2 box3 box4 box5"
+            "box1 box6 box3 box7 box5"
+            "box8 box6 box9 box7 box10";
+             width: 95vw;
+            height: 45vw;
+            justify-content: center;
+            margin: 0 auto;
+        }
+        .container>div{
+            font-size: 30px;
+            /* outline: 1px solid black; */
+            border-radius: 10px;
+            margin: 5px;
+        }
+        .box1{
+            background: linear-gradient(to top, rgb(223, 82, 82),pink);
+        }
+        .box2{
+            background: linear-gradient(to top, rgb(71, 71, 224),rgb(119, 195, 253));
+        }
+        .box3{
+            background: linear-gradient(to top, rgb(244, 141, 15),rgb(250, 202, 83));
+        }
+        .box4{
+            background: linear-gradient(to top, rgb(217, 34, 245),rgb(131, 48, 226));
+        }
+        .box5{
+            background: linear-gradient(to top,rgb(144, 235, 238),rgb(92, 232, 197));
+        }
+        .box6{
+            background: linear-gradient(to top,rgb(144, 235, 238),rgb(92, 232, 197));
+        }
+        .box7{
+            background: linear-gradient(to top,rgb(144, 235, 238),rgb(92, 232, 197));
+        }
+
+        .box8{
+            background: linear-gradient(to top,rgb(144, 235, 238),rgb(92, 232, 197));
+        }
+        .box9{
+            background: linear-gradient(to top,rgb(144, 235, 238),rgb(92, 232, 197));
+        }
+        .box10{
+            background: linear-gradient(to top,rgb(144, 235, 238),rgb(92, 232, 197));
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>
+            Tilepress
+        </h1>
+        <div class="search">
+            <input type="text" id="s" placeholder="Search for ideas">
+        </div>
+        <div>
+        </div>
+    </nav>
+    <br><br>
+    <div class="container">
+        <div class="box1" style="grid-area: box1;"></div>
+        <div class="box2" style="grid-area: box2;"></div>
+        <div class="box3" style="grid-area: box3;"></div>
+        <div class="box4" style="grid-area: box4;"></div>
+        <div class="box5" style="grid-area: box5;"></div>
+        <div class="box6" style="grid-area: box6;"></div>
+        <div class="box7" style="grid-area: box7;"></div>
+        <div class="box8" style="grid-area: box8;"></div>
+        <div class="box9" style="grid-area: box9;"></div>
+        <div class="box10" style="grid-area: box10;"></div>
+    </div>
+</body>
+</html>

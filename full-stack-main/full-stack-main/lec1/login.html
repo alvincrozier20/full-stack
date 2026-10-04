@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .login-container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-button {
+    margin-top: 10px;
+
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 1px;
+}
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1 align="center">Login</h1>
+        <form class="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Username">
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Password">
+            <button type="submit" class="login-button" align="center">Login</button>
+        </form>
+    </div>
+</body>
+</html>
